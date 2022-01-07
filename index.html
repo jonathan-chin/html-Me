@@ -15,6 +15,25 @@
       .underlined{
 	  text-decoration: underline;
       }
+
+      #container{
+	  display: flex;
+	  flex-wrap: wrap;
+	  list-style-type: none;
+      }
+
+      #container li{
+	  border: 1px solid black;
+	  padding: 4px;
+	  margin: 4px;
+	  flex-grow: 1;
+	  text-align: center;
+      }
+
+      #power{
+	  flex-grow: 5; /* doesn't work? */
+      }
+      
     </style>
   </head>
   
@@ -35,17 +54,17 @@
       <img src="https://media.gq.com/photos/59dfc6d9d61cb80476584e18/master/pass/guy-fieiri-flame.jpg" alt="Guy Fieri" width= 500/>
     </div>
 
-    <ul>
-      <li>It's about <b class='big'>DRIVE</b></li>
-      <li>It's about <b class='big'>POWER</b></li>
-      <li>We stay <b class='big underlined'>HUNGRY</b></li>
-      <li>We <b class='big'>DEVOUR</b></li>
-      <li>Put in the <b class='big'>WORK</b></li>
-      <li>Put in the <b class='big'>HOURS</b></li>
-      <li>And take what's <b class='big underlined'>OURS</b></li>
-    </ul>
+      <ul id='container'>
+	<li>It's about <b class='big'>DRIVE</b></li>
+	<li id='power'>It's about <b class='big'>POWER</b></li>
+	<li>We stay <b class='big underlined'>HUNGRY</b></li>
+	<li>We <b class='big'>DEVOUR</b></li>
+	<li>Put in the <b class='big'>WORK</b></li>
+	<li>Put in the <b class='big'>HOURS</b></li>
+	<li>And take what's <b class='big underlined'>OURS</b></li>
+      </ul>
 
-    <img src="https://img.buzzfeed.com/buzzfeed-static/static/2015-10/12/13/enhanced/webdr06/grid-cell-8715-1444671921-10.jpg" alt="The Rock Fieri" width= 400/> 
+      <img src="https://img.buzzfeed.com/buzzfeed-static/static/2015-10/12/13/enhanced/webdr06/grid-cell-8715-1444671921-10.jpg" alt="The Rock Fieri" width= 400/>
     <br>
 
     <br>
